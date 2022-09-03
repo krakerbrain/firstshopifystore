@@ -1,0 +1,9 @@
+prod:
+  password: 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
+  theme_id: "131034251458"
+  store: montenegro-6685.myshopify.com
+
+dev:
+  password: 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
+  theme_id: "131045523650"
+  store: montenegro-6685.myshopify.com
