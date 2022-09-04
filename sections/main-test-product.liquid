@@ -1,24 +1,29 @@
 
 <h2>{{ product.title }}</h2>
 
-<img src="{{ product.featured_image | img_url: '300px' }}"/>
+{% comment %} <img src="{{ product.featured_image | img_url: '500px' }}"/> {% endcomment %}
 
+<img width="200" height="250" src="{{ product.featured_image | image_url }}" loading="lazy"/>
+
+{% if section.settings.show_reviews %}
 <h4>⭐⭐⭐⭐⭐</h4>
+{% endif %}
 
+<h4>{{ section.settings.tax_notice }}</h4>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": [
-        {
-            "id":"tax_notice",
-            "type":"text",
-            "label":"tax_notice"
-        },
-        {
-            "id":"show_reviews",
-            "type":"checkbox",
-            "label":"show_reviews"
-        }
-    ]
-  }
+{
+  "name": "Section name",
+  "settings": [
+    {
+      "id": "tax_notice",
+      "type": "text",
+      "label": "tax_notice"
+    },
+    {
+      "id": "show_reviews",
+      "type": "checkbox",
+      "label": "show_reviews"
+    }
+  ]
+}
 {% endschema %}
