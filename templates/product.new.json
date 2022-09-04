@@ -1,19 +1,8 @@
 {
   "sections": {
     "main": {
-<<<<<<< HEAD
       "type": "main-test-product"
     }
   },
   "order": ["main"]
-=======
-      "type": "main-test-product",
-      "settings": {
-      }
-    }
-  },
-  "order": [
-    "main"
-  ]
->>>>>>> 30c572589dbba250e712823cb11beba0cff91af0
 }
