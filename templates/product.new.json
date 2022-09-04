@@ -1,8 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "main-test-product"
+      "type": "main-test-product",
+      "settings": {
+        "tax_notice": "Con impuestos",
+        "show_reviews": false
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
